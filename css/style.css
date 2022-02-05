@@ -40,7 +40,7 @@ padding:10px 0 15px 0;
 #accueil #header, 
 #header {
 margin-bottom:10px;
-text-align:left;
+/*text-align:left;*/ // Pour ne pas centrer le titre
 /*background:#394520;*/
 /*histoireCV*/
 -moz-box-shadow:-6px 2px 6px 0 #A9A9A9;
@@ -60,7 +60,7 @@ font-size:1.6em
 #header h1 span.debutant {
 font-family:"courier new", courier, serif; 
 color:white;
-font-size:1.2em
+/*font-size:1.2em*/
 }
 #header h1 abbr {
 border:none;
@@ -610,7 +610,7 @@ font-size:100%
 }
 #chapo p:before, 
 #chapelleAcceuil #home .table p:before {
-content:url(images/main3.png) " ";
+content:url(.png) " ";
 }
 #chapo p + p:before, 
 #chapo p.normal:before, 
