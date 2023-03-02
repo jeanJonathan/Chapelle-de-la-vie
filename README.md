@@ -1,8 +1,8 @@
-# Chapelle-de-la-vie
+# Chapelle-de-la-vie 
 J'ai utiliser mes competences acquise pour approfondir le
 developpement du site web de mon eglise
 la Chapelle de la Vie 
-
+#projet personnel
 IDE : WebStrom
 
 Système de gestion de bases de données : MySQL
