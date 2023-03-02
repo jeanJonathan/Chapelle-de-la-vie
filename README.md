@@ -7,7 +7,7 @@ IDE : WebStrom
 
 Système de gestion de bases de données : MySQL
 
-Outil de versioning : Git ;)
+Outil de versioning : Git
 
 Bibliothèque et framework : 
 Lodash : Pour la manipulation d'Une variété d'outils pour travailler avec des tableaux, des objets, des chaînes de caractères, etc.
