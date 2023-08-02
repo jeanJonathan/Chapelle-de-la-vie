@@ -3,246 +3,297 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.108.0">
-  <title>Carousel Template · Bootstrap v5.3</title>
+  <title>la chapelle de la Vie - Accueil</title>
 
-  <!---Commentaire de tout les liens de feuille de style et de js pour les rajouter dans le ficher index.html
-  afin de pourvoir accerder aux elements a partir de n'importe quel page de l'application--->
-
-  <!---<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">--->
-  <!--- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Feuilles de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@bootstrap.min.css" rel="stylesheet">
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
+    /* Vos styles personnalisés peuvent être ajoutés ici */
+    body {
+      background-color: #f0f0f0;
     }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
+    .img-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .b-example-divider {
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    /* Styles pour les sections de la page d'accueil */
+    .section-heading {
+      font-size: 28px;
+      color: #254117;
+      font-weight: bold;
     }
 
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
+    .section-content {
+      font-size: 18px;
+      color: #333333;
     }
 
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
+    /* Styles pour les cartes des événements à venir */
+    .event-card {
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
     }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
+    .event-title {
+      font-size: 20px;
+      color: #009a80;
+      font-weight: bold;
     }
 
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
+    .event-date {
+      font-size: 16px;
+      color: #2E8B57; /* Utiliser la couleur du header pour les horaires des réunions et des services */
     }
   </style>
 
-
-  <!-- Custom styles for this template -->
-  <!-- <link href="../assets/carousel.css" rel="stylesheet"> -->
 </head>
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="/assets/images/logoCV.jpg" width="50%" height="50%"></a>
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #254117;">
+  <div class="container-fluid">
+      <!-- Logo de l'Église -->
+      <a class="navbar-brand" href="#"><img src="/assets/images/logoCV.jpg" class="logo-img"></a>
+      <style>
+        /* Styles pour le logo */
+        .logo-img {
+          width: 70px; /* Ajustez la taille selon vos préférences */
+          height: 70px; /* Ajustez la taille selon vos préférences */
+          border-radius: 50%; /* Pour créer un cercle */
+          object-fit: cover; /* Pour s'assurer que l'image remplit correctement le cercle */
+        }
+      </style>
+      <!-- Bouton pour le menu mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Liens du menu -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Welcome</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link active" aria-current="page" href="#">ACCEUIL</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Our Strory</a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOTRE HISTOIRE</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Building of the church</a></li>
-              <li><a class="dropdown-item" href="#">Consecration</a></li>
-              <li><a class="dropdown-item" href="#">Dedication of the church</a></li>
-              <li><a class="dropdown-item" href="#">Deacon</a></li>
-              <li><a class="dropdown-item" href="#">Family</a></li>
-              <li><a class="dropdown-item" href="#">Child</a></li>
+              <li><a class="dropdown-item" href="#">MOT DU PASTEUR</a></li>
+              <li><a class="dropdown-item" href="#">CONSEIL DES DIACRES</a></li>
+              <li><a class="dropdown-item" href="#">CONSEIL DES ADMINISTRATEURS</a></li>
+              <li><a class="dropdown-item" href="#">L'ECODIM</a></li>
+              <li><a class="dropdown-item" href="#">LA CHAPELLE DE LA VIE</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">hymns</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">SERMONS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Audio</a></li>
+              <li><a class="dropdown-item" href="#">Video</a></li>
+            </ul>
+          </li>
+          <!-- Ajout de la section "Événements à venir" dans le menu -->
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="#">CANTIQUES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ACTUALITES</a>
           </li>
         </ul>
+        <!-- Formulaire de recherche -->
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Recherche">
+          <button class="btn btn-outline-light" type="submit">Rechercher</button>
         </form>
+        <!-- Bouton de connexion -->
+        <a href="#" class="btn btn-outline-light ms-3">Se connecter</a>
       </div>
     </div>
   </nav>
-
 </header>
 
 <main>
-
+  <!-- Carrousel d'images -->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicateurs de diapositives -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
     </div>
+    <!-- Contenu des diapositives -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/imageAcceuil/pexels.jpg" alt="Fr Jean-Mar & Sr X" class="img-fluid img-center">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Fr Jean-Mar & Sr X</h1>
-            <p>Félicitations aux nouveaux mariés!</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Une autre diapositive.</h1>
+            <p>Un contenu de remplacement pour la deuxième diapositive de ce carrousel.</p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/assets/images/imageCarouselle/infoReunions.jpg" alt="information sur les des reunion" width="100%" height="100%">
+        <img src="../assets/images/imageAcceuil/pexels3.jpg" alt="Informations sur les réunions" class="img-fluid img-center">
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/imageAcceuil/pexels2.jpg" alt="Image 3" class="img-fluid img-center">
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Une autre diapositive.</h1>
+            <p>Un contenu de remplacement pour la troisième diapositive de ce carrousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Parcourir la galerie</a></p>
           </div>
         </div>
       </div>
     </div>
+    <!-- Contrôles du carrousel -->
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Précédent</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Suivant</span>
     </button>
   </div>
 
+  <!-- Section Horaires des réunions et des services -->
+  <!-- Section Horaires des réunions et des services -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="section-heading">Horaires des réunions et des services</h2>
+        <p class="section-content">Venez nous rejoindre pour les réunions et les services qui se tiennent chaque semaine. Vous trouverez ci-dessous les horaires de nos réunions hebdomadaires.</p>
+        <!-- Tableau des horaires -->
+        <table class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Heure</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Dimanche</td>
+            <td>8h30 - 12h</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>18h30 - 20h</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>18h30 - 20h</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Video représentant la réunion -->
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <object data="https://www.youtube.com/v/qARZE41iZyQ" class="img-fluid rounded" style="width: 100%; height: 270px;">
+            <param name="movie" value="https://www.youtube.com/v/qARZE41iZyQ">
+            <param name="allowFullScreen" value="true">
+            <param name="allowscriptaccess" value="always">
+            <!-- Fournir une alternative pour les navigateurs qui ne supportent pas la balise <object> -->
+            Votre navigateur ne supporte pas la vidéo.
+          </object>
+        </div>
+      </div>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    </div>
+  </div>
 
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
-
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      <div class="col-md-7" style="margin-top: -175px;">
+        <h2 class="featurette-heading fw-normal lh-1">LA MANNE DU JOUR </h2>
+        <hr style="height: 4px; background-color: #1F6530; border: none;">
+        <p class="lead">Car la terre produit d'elle-même, d'abord l'herbe, ensuite l'épi, puis le grain tout formé dans l'épi"</p>
+        <p class="lead"><b>Marc 4:28</b></p>
+        <p></p>
+        <p class="lead">Et alors, l'église s'est développée, comme un germe dans la terre. D'abord, l'église, c'était une petite herbe.
+          Elle est passée par les différentes phases de la justification, de la sanctification, du baptême du Saint-Esprit,
+          de la puissance divine, jusqu'à ce qu'elle devienne une église mûre, un vrai épi de blé dans le Royaume de Dieu,
+          qui a mûri pour le temps de la récolte."</p>
+        <p class="lead"><b>William Marrion Branham, Série de réunions, 62-0713</b></p>
       </div>
       <div class="col-md-5">
-        <img src="../assets/images/imageAcceuil/pexels.jpg" height="500" width="500"/>
+        <img src="../assets/images/imageAcceuil/paril3.jpg" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
       </div>
     </div>
+
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      <div class="col-md-4 d-flex align-items-center">
+        <!-- Formulaire de contact -->
+        <section class="container mt-5">
+          <h2 class="section-heading">Contactez-nous</h2>
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="inputName" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="inputName" required>
+            </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Adresse e-mail</label>
+              <input type="email" class="form-control" id="inputEmail" required>
+            </div>
+            <div class="col-12">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="inputMessage" rows="4" required></textarea>
+            </div>
+            <div class="col-12">
+              <!-- Bouton d'envoi du formulaire avec la couleur spécifique -->
+              <button type="submit" class="btn btn-success" style="background-color: #254117; color: #ffffff;">Envoyer</button>
+            </div>
+          </form>
+        </section>
       </div>
-      <div class="col-md-5 order-md-1">
-        <img src="../assets/images/imageAcceuil/pexels1.jpg" class="img-fluid" alt="Image d'accueil">
-        <hr class="featurette-divider">
+      <div class="col-md-4 d-flex align-items-center">
+        <div style="position: relative; width: 100%;">
+          <!-- Image -->
+          <img src="../assets/images/5.jpg" class="img-fluid rounded" alt="Image d'accueil" style="width: 100%; height: 100%;">
+
+          <p class="mt-3 text-center" style="position: absolute; bottom: 0; width: 100%; font-size: 18px; background-color: rgba(255, 255, 255, 0.8);">
+            Et le quatrième être vivant est semblable à un aigle qui vole.
+            <i>Apocalypse 4:6</i>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="col-md-4 d-flex align-items-center" style="position: relative; top: 38%; transform: translateY(50%);">
+          <div class="row">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <img src="../assets/images/yt.png"  alt="Image 1" style="width: 80px;">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <img src="../assets/images/fb.png" class="img-fluid rounded-circle" alt="Image 2" style="width: 40px;">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
 </main>
 
-<!----<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>----->
+<footer class="container mt-5">
+  <p class="float-end"><a href="#">Retour en haut de page</a></p>
+  <p>&copy; 2023 la chapelle de la Vie &middot; <a href="#">Politique de confidentialité</a> &middot; <a href="#">Conditions d'utilisation</a></p>
+</footer>
 
-
+<!-- Scripts JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<router-outlet></router-outlet>
