@@ -137,7 +137,7 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>La Parole de Dieu</h1>
-            <p>"Ta parole est une lampe à mes pieds, et une lumière sur mon sentier." - Psaume 119:105</p>
+            <p>Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. - Psaume 119:105</p>
           </div>
         </div>
       </div>
@@ -175,6 +175,14 @@
         color: #00aa80; /* Texte en blanc avec une opacité de 80% */
         font-family: 'Arial', sans-serif; /* Police du texte */
         line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+      }
+      /* Styles pour les écrans de petite taille (ordinateurs portables) */
+      /* Styles pour les écrans de grande taille (supérieurs à 768px) */
+      @media (min-width: 769px) {
+        .carousel-caption h1,
+        .carousel-caption p {
+          color: #ffffff; /* Texte en blanc pour les écrans de grande taille */
+        }
       }
     </style>
     <!-- Contrôles du carrousel -->
