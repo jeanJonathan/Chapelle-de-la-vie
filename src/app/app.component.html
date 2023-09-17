@@ -19,27 +19,26 @@
   <!-- Section Horaires des réunions et des services -->
   <app-schedule></app-schedule>
   <!------>
+  <!-- 3. Afficher les données dans le template (accueil.component.html) -->
   <div class="container marketing">
     <!-- Three columns of text below the carousel -->
     <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7" style="margin-top: -175px;">
-        <h2 class="featurette-heading fw-normal lh-1">LA MANNE DU JOUR </h2>
+        <h2 class="featurette-heading fw-normal lh-1">{{ manneDuJourData[0].title }}</h2>
         <hr style="height: 4px; background-color: #1F6530; border: none;">
-        <p class="lead">Car la terre produit d'elle-même, d'abord l'herbe, ensuite l'épi, puis le grain tout formé dans l'épi"</p>
-        <p class="lead"><b>Marc 4:28</b></p>
-        <p></p>
-        <p class="lead">Et alors, l'église s'est développée, comme un germe dans la terre. D'abord, l'église, c'était une petite herbe.
-          Elle est passée par les différentes phases de la justification, de la sanctification, du baptême du Saint-Esprit,
-          de la puissance divine, jusqu'à ce qu'elle devienne une église mûre, un vrai épi de blé dans le Royaume de Dieu,
-          qui a mûri pour le temps de la récolte."</p>
-        <p class="lead"><b>William Marrion Branham, Série de réunions, 62-0713</b></p>
+        <p class="lead">{{ manneDuJourData[0].content }}</p>
+        <p class="lead"><b>{{ manneDuJourData[0].verse }}</b></p>
+        <p>{{ manneDuJourData[0].citation}}</p>
+        <p class="lead">{{ manneDuJourData[0].author }}</p>
+        <p class="lead"><b>{{ manneDuJourData[0].date }}</b></p>
       </div>
       <div class="col-md-5">
-        <img src="../assets/images/imageAcceuil/paril3.jpg" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
+        <img src="{{ manneDuJourData[0].image }}" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
       </div>
     </div>
-  </div><!-- /.container -->
+  </div>
+  <!-- /.container -->
 </main>
 <footer class="container mt-5">
   <!-- Ligne de séparation -->
