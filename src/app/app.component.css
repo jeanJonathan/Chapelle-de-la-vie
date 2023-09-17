@@ -1,0 +1,39 @@
+/* Styles CSS personnalisés pour les icônes de médias sociaux et le footer */
+.social-media-icons {
+  text-align: center; /* Centrer les icônes horizontalement */
+}
+
+.icon {
+  width: 30px; /* Réduire la largeur des icônes */
+  height: 30px; /* Réduire la hauteur des icônes */
+  margin: 1px; /* Réduire l'espacement entre les icônes */
+}
+
+/* Style pour le footer */
+footer.container {
+  padding: 10px; /* Réduire l'espacement intérieur du footer */
+  text-align: center; /* Centrer le contenu du footer horizontalement */
+}
+
+.footer-heading {
+  font-size: 16px; /* Réduire la taille de la police pour les titres du footer */
+  margin-bottom: 1px; /* Réduire l'espacement entre les titres */
+}
+
+.footer-content {
+  font-size: 14px; /* Réduire la taille de la police pour le contenu du footer */
+  margin-bottom: 1px; /* Réduire l'espacement entre les éléments du contenu */
+}
+
+/* Style pour les liens du footer */
+.footer-link {
+  text-decoration: none; /* Supprimer la soulignement des liens */
+  color: #254117; /* Couleur des liens */
+  margin: 0 1px; /* Réduire l'espacement horizontal entre les liens */
+}
+
+/* Style pour le copyright */
+.footer-copyright {
+  font-size: 12px; /* Réduire la taille de la police pour le copyright */
+  margin-top: 1px; /* Réduire l'espacement entre le contenu et le copyright */
+}
