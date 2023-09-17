@@ -1,0 +1,73 @@
+/* Styles CSS personnalisés pour la barre de navigation */
+.logo-img {
+  width: 70px; /* Ajustez la taille selon vos préférences */
+  height: 70px; /* Ajustez la taille selon vos préférences */
+  border-radius: 50%; /* Pour créer un cercle */
+  object-fit: cover; /* Pour s'assurer que l'image remplit correctement le cercle */
+}
+
+/* Styles pour le bouton de recherche */
+.form-control {
+  width: 200px; /* Ajustez la largeur selon vos préférences */
+}
+
+/* Styles pour le bouton de connexion */
+.nav-link.btn {
+  color: #ffffff; /* Couleur du texte du bouton de connexion */
+  background-color: transparent; /* Arrière-plan transparent */
+  border-color: #ffffff; /* Couleur de la bordure du bouton */
+}
+
+.nav-link.btn:hover {
+  background-color: #ffffff; /* Couleur de fond au survol */
+  color: #254117; /* Couleur du texte au survol */
+}
+<!---->
+/* Vos styles personnalisés peuvent être ajoutés ici */
+body {
+  background-color: #f0f0f0;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles pour les sections de la page d'accueil */
+.section-heading {
+  font-size: 28px;
+  color: #254117;
+  font-weight: bold;
+}
+
+.section-content {
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Styles pour les cartes des événements à venir */
+.event-card {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.event-title {
+  font-size: 20px;
+  color: #009a80;
+  font-weight: bold;
+}
+
+.event-date {
+  font-size: 16px;
+  color: #2E8B57; /* Utiliser la couleur du header pour les horaires des réunions et des services */
+}
+/* Styles pour le logo */
+.logo-img {
+  width: 70px; /* Ajustez la taille selon vos préférences */
+  height: 70px; /* Ajustez la taille selon vos préférences */
+  border-radius: 50%; /* Pour créer un cercle */
+  object-fit: cover; /* Pour s'assurer que l'image remplit correctement le cercle */
+}

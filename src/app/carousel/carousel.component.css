@@ -1,0 +1,37 @@
+/* Styles pour le carrousel */
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour les légendes */
+  color: #ffffff; /* Couleur du texte des légendes */
+}
+
+.carousel-caption h3 {
+  font-size: 24px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+}
+<!---->
+/* Styles pour le texte dans les diapositives */
+.carousel-caption h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #254117; /* Utilisation d'une couleur verte vive */
+  font-family: 'Montserrat', sans-serif; /* Utilisation de la police Montserrat */
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  color: #00aa80; /* Texte en blanc avec une opacité de 80% */
+  font-family: 'Arial', sans-serif; /* Police du texte */
+  line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+}
+/* Styles pour les écrans de petite taille (ordinateurs portables) */
+/* Styles pour les écrans de grande taille (supérieurs à 768px) */
+@media (min-width: 769px) {
+  .carousel-caption h1,
+  .carousel-caption p {
+    color: #ffffff; /* Texte en blanc pour les écrans de grande taille */
+  }
+}

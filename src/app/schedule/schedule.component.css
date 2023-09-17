@@ -1,0 +1,45 @@
+.schedule {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background-color: #254117;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/* Styles pour le cadre de la vidéo */
+.video-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Couleur de fond du cadre */
+  border: 2px solid #009a80; /* Bordure autour de la vidéo */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espace à l'intérieur du cadre */
+  height: 100%; /* Pour centrer verticalement la vidéo */
+}
+
+/* Styles pour la vidéo */
+.video {
+  width: 100%; /* La vidéo occupe 100% de la largeur du conteneur */
+  height: 100%; /* La vidéo occupe 100% de la hauteur du conteneur */
+  max-width: none; /* Supprimez la limite de la largeur maximale de la vidéo */
+  max-height: none; /* Supprimez la limite de la hauteur maximale de la vidéo */
+}
+
+
