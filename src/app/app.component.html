@@ -4,184 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>la chapelle de la Vie - Accueil</title>
-
   <!-- Feuilles de style -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* Vos styles personnalisés peuvent être ajoutés ici */
-    body {
-      background-color: #f0f0f0;
-    }
-
-    .img-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Styles pour les sections de la page d'accueil */
-    .section-heading {
-      font-size: 28px;
-      color: #254117;
-      font-weight: bold;
-    }
-
-    .section-content {
-      font-size: 18px;
-      color: #333333;
-    }
-
-    /* Styles pour les cartes des événements à venir */
-    .event-card {
-      border: 1px solid #cccccc;
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-
-    .event-title {
-      font-size: 20px;
-      color: #009a80;
-      font-weight: bold;
-    }
-
-    .event-date {
-      font-size: 16px;
-      color: #2E8B57; /* Utiliser la couleur du header pour les horaires des réunions et des services */
-    }
-  </style>
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
   <!-- Barre de navigation -->
   <app-header></app-header>
 </header>
-
 <main>
   <!-- Carrousel d'images -->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Indicateurs de diapositives -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
-    </div>
-    <!-- Contenu des diapositives -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../assets/images/imageAcceuil/pexels-mart-production-7219517.jpg" alt="" class="img-fluid img-center">
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>La Parole de Dieu</h1>
-            <p>Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. - Psaume 119:105</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/images/imageAcceuil/pexels-cottonbro-studio-4918108.jpg" alt="Informations sur les réunions" class="img-fluid img-center">
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Entendre et Suivre</h1>
-            <p>Mes brebis entendent ma voix et me suivent. - Jean 10:27</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../assets/images/imageAcceuil/pexels2.jpg" alt="Image 3" class="img-fluid img-center">
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Crois Seulement</h1>
-            <p>Tout est possible à celui qui croit.- Marc 9:23</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-      /* Styles pour le texte dans les diapositives */
-      .carousel-caption h1 {
-        font-size: 36px;
-        font-weight: bold;
-        color: #254117; /* Utilisation d'une couleur verte vive */
-        font-family: 'Montserrat', sans-serif; /* Utilisation de la police Montserrat */
-      }
-
-      .carousel-caption p {
-        font-size: 18px;
-        color: #00aa80; /* Texte en blanc avec une opacité de 80% */
-        font-family: 'Arial', sans-serif; /* Police du texte */
-        line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
-      }
-      /* Styles pour les écrans de petite taille (ordinateurs portables) */
-      /* Styles pour les écrans de grande taille (supérieurs à 768px) */
-      @media (min-width: 769px) {
-        .carousel-caption h1,
-        .carousel-caption p {
-          color: #ffffff; /* Texte en blanc pour les écrans de grande taille */
-        }
-      }
-    </style>
-    <!-- Contrôles du carrousel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Précédent</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Suivant</span>
-    </button>
-  </div>
-
+  <app-carousel></app-carousel>
   <!-- Section Horaires des réunions et des services -->
-  <!-- Section Horaires des réunions et des services -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="section-heading">Horaires des réunions et des services</h2>
-        <p class="section-content">Venez nous rejoindre pour les réunions et les services qui se tiennent chaque semaine. Vous trouverez ci-dessous les horaires de nos réunions hebdomadaires.</p>
-        <!-- Tableau des horaires -->
-        <table class="table table-bordered table-striped">
-          <thead>
-          <tr>
-            <th>Jour</th>
-            <th>Heure</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>Dimanche</td>
-            <td>8h30 - 12h</td>
-          </tr>
-          <tr>
-            <td>Mercredi</td>
-            <td>18h30 - 20h</td>
-          </tr>
-          <tr>
-            <td>Vendredi</td>
-            <td>18h30 - 20h</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- Video représentant la réunion -->
-      <div class="col-md-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <object data="https://www.youtube.com/v/qARZE41iZyQ" class="img-fluid rounded" style="width: 100%; height: 270px;">
-            <param name="movie" value="https://www.youtube.com/live/bblYaVtsd1M?si=0QOGNjP0OTLPep9k">
-            <param name="allowFullScreen" value="true">
-            <param name="allowscriptaccess" value="always">
-            <!-- Fournir une alternative pour les navigateurs qui ne supportent pas la balise <object> -->
-            Votre navigateur ne supporte pas la vidéo.
-          </object>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
+  <app-schedule></app-schedule>
+  <!------>
   <div class="container marketing">
     <!-- Three columns of text below the carousel -->
     <hr class="featurette-divider">
@@ -203,6 +40,7 @@
       </div>
     </div>
   </div><!-- /.container -->
+
 </main>
 <footer class="container mt-5">
   <!-- Ligne de séparation -->
