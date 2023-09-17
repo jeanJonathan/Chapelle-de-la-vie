@@ -54,71 +54,9 @@
 
 </head>
 <body>
-
 <header>
   <!-- Barre de navigation -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #254117;">
-    <div class="container-fluid">
-      <!-- Logo de l'Église -->
-      <a class="navbar-brand" href="#"><img src="/assets/images/logoCV.jpg" class="logo-img"></a>
-      <style>
-        /* Styles pour le logo */
-        .logo-img {
-          width: 70px; /* Ajustez la taille selon vos préférences */
-          height: 70px; /* Ajustez la taille selon vos préférences */
-          border-radius: 50%; /* Pour créer un cercle */
-          object-fit: cover; /* Pour s'assurer que l'image remplit correctement le cercle */
-        }
-      </style>
-      <!-- Bouton pour le menu mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Liens du menu -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOTRE HISTOIRE</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">MOT DU PASTEUR</a></li>
-              <li><a class="dropdown-item" href="#">CONSEIL DES DIACRES</a></li>
-              <li><a class="dropdown-item" href="#">CONSEIL DES ADMINISTRATEURS</a></li>
-              <li><a class="dropdown-item" href="#">L'ECODIM</a></li>
-              <li><a class="dropdown-item" href="#">LA CHAPELLE DE LA VIE</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">SERMONS</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Audio</a></li>
-              <li><a class="dropdown-item" href="#">Vidéo</a></li>
-            </ul>
-          </li>
-          <!-- Ajout de la section "Événements à venir" dans le menu -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">CANTIQUES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ACTUALITÉS</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-          <button class="btn btn-outline-success" type="submit">Rechercher</button>
-        </form>
-        <!-- Bouton de connexion -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link btn btn-outline">SE CONNECTER</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <app-header></app-header>
 </header>
 
 <main>
@@ -245,9 +183,7 @@
   </div>
 
   <div class="container marketing">
-
     <!-- Three columns of text below the carousel -->
-
     <hr class="featurette-divider">
     <div class="row featurette">
       <div class="col-md-7" style="margin-top: -175px;">
@@ -266,67 +202,75 @@
         <img src="../assets/images/imageAcceuil/paril3.jpg" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
       </div>
     </div>
+  </div><!-- /.container -->
+</main>
+<footer class="container mt-5">
+  <!-- Ligne de séparation -->
+  <hr class="featurette-divider">
 
+  <div class="row">
+    <!-- Section d'adresse et de contact -->
+    <div class="col-md-4">
+      <h5 class="section-heading">Adresse</h5>
+      <p>Adjame Paillet 3, Abidjan, Côte d'Ivoire</p>
+      <p>Abidjan, 225</p>
+      <p>Côte d'Ivoire</p>
+      <br>
+      <h5 class="section-heading">Contact</h5>
+      <p>Téléphone : +225 0747308307</p>
+      <p>Email : contact@chapelledelavie.com</p>
+    </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-4 d-flex align-items-center">
-        <!-- Formulaire de contact -->
-        <section class="container mt-5">
-          <h2 class="section-heading">Contactez-nous</h2>
-          <form class="row g-3">
-            <div class="col-12">
-              <label for="inputName" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="inputName" required>
-            </div>
-            <div class="col-12">
-              <label for="inputEmail" class="form-label">Adresse e-mail</label>
-              <input type="email" class="form-control" id="inputEmail" required>
-            </div>
-            <div class="col-12">
-              <label for="inputMessage" class="form-label">Message</label>
-              <textarea class="form-control" id="inputMessage" rows="4" required></textarea>
-            </div>
-            <div class="col-12">
-              <!-- Bouton d'envoi du formulaire avec la couleur spécifique -->
-              <button type="submit" class="btn btn-success" style="background-color: #254117; color: #ffffff;">Envoyer</button>
-            </div>
-          </form>
-        </section>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div style="position: relative; width: 100%;">
-          <!-- Image -->
-          <img src="../assets/images/5.jpg" class="img-fluid rounded" alt="Image d'accueil" style="width: 100%; height: 100%;">
-
-          <p class="mt-3 text-center" style="position: absolute; bottom: 0; width: 100%; font-size: 18px; background-color: rgba(255, 255, 255, 0.8);">
-            Et le quatrième être vivant est semblable à un aigle qui vole.
-            <i>Apocalypse 4:6</i>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex align-items-center">
-        <div class="col-md-4 d-flex align-items-center" style="position: relative; top: 38%; transform: translateY(50%);">
-          <div class="row">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-              <img src="../assets/images/yt.png"  alt="Image 1" style="width: 80px;">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <img src="../assets/images/fb.png" class="img-fluid rounded-circle" alt="Image 2" style="width: 40px;">
-            </div>
-          </div>
-        </div>
+    <div class="col-md-4">
+      <h5 class="section-heading">Suivez-nous</h5>
+      <div class="social-media-icons">
+        <a href="#"><img src="../assets/images/fb.png" alt="Facebook" class="icon"></a>
+        <a href="#"><img src="../assets/images/insta.png" alt="Instagram" class="icon"></a>
+        <a href="#"><img src="../assets/images/yt.png" alt="YouTube" class="icon"></a>
       </div>
     </div>
 
-  </div><!-- /.container -->
-</main>
-
-<footer class="container mt-5">
-  <p class="float-end"><a href="#">Retour en haut de page</a></p>
-  <p>&copy; 2023 la chapelle de la Vie &middot; <a href="#">Politique de confidentialité</a> &middot; <a href="#">Conditions d'utilisation</a></p>
-</footer>
-
+    <!-- Section de formulaire de contact -->
+    <div class="col-md-4">
+      <h5 class="section-heading">Contactez-nous</h5>
+      <form class="row g-3">
+        <div class="col-12">
+          <label for="inputName" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="inputName" required>
+        </div>
+        <div class="col-12">
+          <label for="inputEmail" class="form-label">Adresse e-mail</label>
+          <input type="email" class="form-control" id="inputEmail" required>
+        </div>
+        <div class="col-12">
+          <label for="inputMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="inputMessage" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <!-- Bouton d'envoi du formulaire avec la couleur spécifique -->
+          <button type="submit" class="btn btn-success btn-block" style="background-color: #254117; color: #ffffff;">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Ligne de séparation -->
+  <hr class="featurette-divider">
+  <!-- Mentions légales -->
+  <p class="text-center">
+    &copy; 2023 La Chapelle de la Vie. Tous droits réservés. <br>
+    <a href="#" style="text-decoration: none; color: #254117;">Politique de confidentialité</a> &middot; <a href="#" style="text-decoration: none; color: #254117;">Conditions d'utilisation</a>
+  </p></footer>
+<style>
+  /* Styles CSS personnalisés pour les icônes de médias sociaux */
+  .social-media-icons {
+    text-align: center; /* Centrer les icônes horizontalement */
+  }
+  .icon {
+    width: 50px; /* Ajuster la largeur des icônes */
+    height: 35px; /* Ajuster la hauteur des icônes */
+    margin: 10px; /* Espacement entre les icônes */
+  }
+</style>
 <!-- Scripts JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0@bootstrap.bundle.min.js"></script>
 </body>
