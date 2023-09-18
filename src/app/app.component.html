@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,41 +18,10 @@
   <app-carousel></app-carousel>
   <!-- Section Horaires des réunions et des services -->
   <app-schedule></app-schedule>
-  <!------>
-  <!-- 3. Afficher les données dans le template (accueil.component.html) --><div class="container marketing">
-  <!-- Three columns of text below the carousel -->
-  <div class="container marketing">
-    <!-- Three columns of text below the carousel -->
-    <div class="row featurette">
-      <!-- Contenu à gauche -->
-      <div class="col-md-7 schedule"> <!-- Ajout de la classe "schedule" pour appliquer la couleur verte -->
-        <h1 class="featurette-heading fw-bold lh-1 text-success">{{ manneDuJour.title }}</h1>
-        <hr style="height: 4px; background-color: #009a80; border: none;">
-        <p class="lead text-dark">{{ manneDuJour.content }}</p>
-        <p class="lead"><b class="text-success">{{ manneDuJour.verse }}</b></p>
-        <p class="text-muted">{{ manneDuJour.citation }}</p>
-        <p class="lead text-dark">Fr {{ manneDuJour.author }}</p>
-        <p class="lead"><b class="text-success">{{ manneDuJour.date }}</b></p>
-      </div>
-      <!-- Image à droite avec une marge supérieure -->
-      <div class="col-md-5" style="margin-top: 50px;">
-        <img src="{{ manneDuJour.image }}" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-  </div>
-</div>
-  <style>
-    .text-success {
-      color: #009a80; /* Couleur verte */
-    }
-
-    .bg-success {
-      background-color: #009a80; /* Couleur verte */
-    }
-  </style>
-  <!-- /.container -->
+  <!-- Affichage fes données dans le template (accueil.component.html) -->
+  <app-acceuil> </app-acceuil>
 </main>
+<!--footer present car il serait inchageable et visible dans toute les pages-->
 <footer class="container mt-5">
   <div class="row">
     <!-- Section d'adresse et de contact -->

@@ -10,16 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">ACCUEIL</a>
+          <a class="nav-link active" routerLink="/" routerLinkActive="active" aria-current="page">ACCUEIL</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOTRE HISTOIRE</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">MOT DU PASTEUR</a></li>
-            <li><a class="dropdown-item" href="#">CONSEIL DES DIACRES</a></li>
-            <li><a class="dropdown-item" href="#">CONSEIL DES ADMINISTRATEURS</a></li>
-            <li><a class="dropdown-item" href="#">L'ECODIM</a></li>
-            <li><a class="dropdown-item" href="#">LA CHAPELLE DE LA VIE</a></li>
+            <li><a class="dropdown-item" routerLink="/mot-du-pasteur">MOT DU PASTEUR</a></li>
+            <li><a class="dropdown-item" routerLink="/conseil-des-diacres">CONSEIL DES DIACRES</a></li>
+            <li><a class="dropdown-item" routerLink="/conseil-des-administrateurs">CONSEIL DES ADMINISTRATEURS</a></li>
+            <li><a class="dropdown-item" routerLink="/ecodim">L'ECODIM</a></li>
+            <li><a class="dropdown-item" routerLink="/chapelle-de-la-vie">LA CHAPELLE DE LA VIE</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -50,3 +50,4 @@
     </div>
   </div>
 </nav>
+<router-outlet></router-outlet>
