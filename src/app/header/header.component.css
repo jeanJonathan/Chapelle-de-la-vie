@@ -23,8 +23,6 @@
   color: #254117; /* Couleur du texte au survol */
 }
 
-/* Vos styles personnalisés peuvent être ajoutés ici */
-
 /* Styles pour la barre de navigation principale */
 .navbar {
   background-color: #254117; /* Couleur de fond de la barre de navigation */
@@ -53,4 +51,26 @@
 .navbar .navbar-collapse .btn-outline-success:hover {
   background-color: #ffffff; /* Couleur de fond au survol du bouton de recherche */
   color: #254117; /* Couleur du texte au survol du bouton de recherche */
+}
+/* Styles pour le menu déroulant */
+.dropdown-menu {
+  background-color: #254117; /* Couleur de fond du menu déroulant */
+  border: none; /* Supprimer la bordure du menu déroulant */
+  margin-top: 0; /* Supprimer la marge supérieure du menu déroulant */
+}
+
+/* Styles pour les éléments du menu déroulant */
+.dropdown-item {
+  color: #ffffff; /* Couleur du texte des éléments du menu déroulant */
+  font-weight: bold; /* Police en gras pour les éléments du menu déroulant */
+}
+
+.dropdown-item:hover {
+  background-color: #1F6530; /* Couleur de fond au survol des éléments du menu déroulant */
+  color: #ffffff; /* Couleur du texte au survol des éléments du menu déroulant */
+}
+
+/* Styles pour les éléments du menu principal au survol */
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+  color: #1F6530; /* Couleur du texte au survol de l'élément du menu principal */
 }
