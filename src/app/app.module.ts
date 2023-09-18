@@ -8,6 +8,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { MotDuPasteurComponent } from './mot-du-pasteur/mot-du-pasteur.component';
+import { ConseilDesDiacresComponent } from './conseil-des-diacres/conseil-des-diacres.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MotDuPasteurComponent } from './mot-du-pasteur/mot-du-pasteur.component
     CarouselComponent,
     ScheduleComponent,
     AcceuilComponent,
-    MotDuPasteurComponent
+    MotDuPasteurComponent,
+    ConseilDesDiacresComponent
   ],
   imports: [
     BrowserModule,
