@@ -7,6 +7,12 @@ import {EcodimComponent} from "./ecodim/ecodim.component";
 import {AcceuilComponent} from "./acceuil/acceuil.component";
 import {ChapelleDeLaVieComponent} from "./chapelle-de-la-vie/chapelle-de-la-vie.component";
 import {NotreHistoireComponent} from "./notre-histoire/notre-histoire.component";
+import {SermonsComponent} from "./sermons/sermons.component";
+import {AudioComponent} from "./audio/audio.component";
+import {VideoComponent} from "./video/video.component";
+import {CantiquesComponent} from "./cantiques/cantiques.component";
+import {ActualitesComponent} from "./actualites/actualites.component";
+
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent },
@@ -16,7 +22,11 @@ const routes: Routes = [
   { path: 'conseil-des-administrateurs', component: ConseilDesAdministrateursComponent },
   { path: 'ecodim', component: EcodimComponent },
   { path: 'chapelle-de-la-vie', component: ChapelleDeLaVieComponent },
-
+  { path: 'sermons', component: SermonsComponent },
+  { path: 'audio', component: AudioComponent },
+  { path: 'video', component: VideoComponent },
+  { path: 'cantiques', component: CantiquesComponent },
+  { path: 'actualites', component: ActualitesComponent },
 ];
 
 @NgModule({
