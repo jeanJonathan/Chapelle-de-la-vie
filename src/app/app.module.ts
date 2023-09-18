@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
+import { MotDuPasteurComponent } from './mot-du-pasteur/mot-du-pasteur.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     HeaderComponent,
     CarouselComponent,
     ScheduleComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    MotDuPasteurComponent
   ],
   imports: [
     BrowserModule,
