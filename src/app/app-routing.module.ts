@@ -5,6 +5,7 @@ import {ConseilDesDiacresComponent} from "./conseil-des-diacres/conseil-des-diac
 import {ConseilDesAdministrateursComponent} from "./conseil-des-administrateurs/conseil-des-administrateurs.component";
 import {EcodimComponent} from "./ecodim/ecodim.component";
 import {AcceuilComponent} from "./acceuil/acceuil.component";
+import {ChapelleDeLaVieComponent} from "./chapelle-de-la-vie/chapelle-de-la-vie.component";
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'conseil-des-diacres', component: ConseilDesDiacresComponent },
   { path: 'conseil-des-administrateurs', component: ConseilDesAdministrateursComponent },
   { path: 'ecodim', component: EcodimComponent },
+  { path: 'chapelle-de-la-vie', component: ChapelleDeLaVieComponent },
 ];
 
 @NgModule({
