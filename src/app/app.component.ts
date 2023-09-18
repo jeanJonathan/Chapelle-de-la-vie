@@ -8,12 +8,15 @@ import { ManneService } from './manne.service';
 })
 export class AppComponent {
   title = 'Chapelle-de-la-Vie-site';
-  manneDuJourData: any[] = [];
+  manneDuJour: any;
   constructor(private manneService: ManneService) { }
 
-  ngOnInit() {
-    // Utilisez le service pour récupérer les données de la Manne du jour lors de l'initialisation du composant
-    this.manneDuJourData = this.manneService.getManneDuJour();
+  ngOnInit(): void {
+    // Obtenez la date actuelle
+    const currentDate = new Date();
+
+    // Appelez la fonction getManneByWeek du service pour obtenir l'élément correspondant
+    this.manneDuJour = this.manneService.getManneByWeek(currentDate);
   }
 }
 
