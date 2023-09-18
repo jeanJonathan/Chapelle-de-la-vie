@@ -1,1 +1,22 @@
-<p>acceuil works!</p>
+<div class="container marketing">
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row featurette">
+      <!-- Contenu à gauche -->
+      <div class="col-md-7 schedule"> <!-- Ajout de la classe "schedule" pour appliquer la couleur verte -->
+        <h1 class="featurette-heading fw-bold lh-1 text-success">{{ manneDuJour.title }}</h1>
+        <hr style="height: 4px; background-color: #009a80; border: none;">
+        <p class="lead text-dark">{{ manneDuJour.content }}</p>
+        <p class="lead"><b class="text-success">{{ manneDuJour.verse }}</b></p>
+        <p class="text-muted">{{ manneDuJour.citation }}</p>
+        <p class="lead text-dark">Fr {{ manneDuJour.author }}</p>
+        <p class="lead"><b class="text-success">{{ manneDuJour.date }}</b></p>
+      </div>
+      <!-- Image à droite avec une marge supérieure -->
+      <div class="col-md-5" style="margin-top: 50px;">
+        <img src="{{ manneDuJour.image }}" class="img-fluid rounded" alt="Image d'accueil" style="height: 500px; width: 500px;">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+</div>
