@@ -10,6 +10,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { MotDuPasteurComponent } from './mot-du-pasteur/mot-du-pasteur.component';
 import { ConseilDesDiacresComponent } from './conseil-des-diacres/conseil-des-diacres.component';
 import { ConseilDesAdministrateursComponent } from './conseil-des-administrateurs/conseil-des-administrateurs.component';
+import { EcodimComponent } from './ecodim/ecodim.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConseilDesAdministrateursComponent } from './conseil-des-administrateur
     AcceuilComponent,
     MotDuPasteurComponent,
     ConseilDesDiacresComponent,
-    ConseilDesAdministrateursComponent
+    ConseilDesAdministrateursComponent,
+    EcodimComponent
   ],
   imports: [
     BrowserModule,

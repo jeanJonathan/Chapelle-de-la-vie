@@ -1,7 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {MotDuPasteurComponent} from "./mot-du-pasteur/mot-du-pasteur.component";
+import {ConseilDesDiacresComponent} from "./conseil-des-diacres/conseil-des-diacres.component";
+import {ConseilDesAdministrateursComponent} from "./conseil-des-administrateurs/conseil-des-administrateurs.component";
+import {EcodimComponent} from "./ecodim/ecodim.component";
+import {AcceuilComponent} from "./acceuil/acceuil.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: AcceuilComponent },
+  { path: 'mot-du-pasteur', component: MotDuPasteurComponent },
+  { path: 'conseil-des-diacres', component: ConseilDesDiacresComponent },
+  { path: 'conseil-des-administrateurs', component: ConseilDesAdministrateursComponent },
+  { path: 'ecodim', component: EcodimComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
